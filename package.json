@@ -1,0 +1,23 @@
+{
+  "name": "react-object-prop",
+  "version": "1.0.0",
+  "description": "Caches Object props in React so as to prevent unnecessary re-rendering.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesStover/react-object-prop.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs"
+  ],
+  "author": "Charles Stover",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CharlesStover/react-object-prop/issues"
+  },
+  "homepage": "https://github.com/CharlesStover/react-object-prop#readme"
+}
