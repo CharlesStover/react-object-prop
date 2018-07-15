@@ -1,8 +1,8 @@
 {
   "name": "react-object-prop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Caches Object props in React so as to prevent unnecessary re-rendering.",
-  "main": "index.js",
+  "main": "react-object-prop.min.js",
   "scripts": {
     "build": "webpack",
     "prepublish": "npm run build",
