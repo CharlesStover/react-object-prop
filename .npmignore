@@ -1,0 +1,6 @@
+/node_modules
+.gitignore
+package.json
+package-lock.json
+react-object-prop.js
+webpack.config.js
