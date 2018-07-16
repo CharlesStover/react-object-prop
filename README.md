@@ -11,6 +11,9 @@ Caches (memoizes) Object props in React so as to prevent unnecessary re-renderin
 * `npm install react-object-prop --save` or
 * `yarn add react-object-prop`
 
+## Test
+`npm test`
+
 ## Use
 Import the creator function from the package. Create a caching function _for each prop you want cached_.
 
