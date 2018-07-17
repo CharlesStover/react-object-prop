@@ -4,11 +4,11 @@ branches:
   only: master
 cache:
   directories:
-  - node_modules
+    - node_modules
 install: npm install
 script:
-- npm test
-- npm run build
+  - npm test
+  - npm run build
 deploy:
   api_key:
     secure: Ri9i9PrS8VjDSNK3OaksSKGcfTBVcTC814W9muB+9h3VvlY25z/9xFLy3w5YmdEaVjcIdEb4dbaFcJvK3cKT03GxbX4l1TDS5tyLT211BVAt4kIjSKYkITZoJjW2PYj9MCTDAxMmQfWzBxF8vhKDtEuPF/s0kIgEq1WWMfC+cwAKn/NyTPGorgh2AJwJthQYMtQxMq3ODv7aRWk/xD6gfz3MMzFz4Qnf/VvrEXjY/9siNK7ppgZKd9/C+KX/WHCMM+6etiVMSudYDQQoEMDb6wn+d7TQsWDACqFdwqsfXdeeYw6/5lXiqlkMtZyEZE5C+Kr7sGBhjEh7a958X2mjmWAd8Aj5tA65Oqu0N73QGiKcUCBnAxCOPL7dXKIp5EdyJfiOL2UL09mG5YLJIABmIKEPEUm0By5SYK6NvVW+8kjuq9t09N/jDw+M5jIiQ5e2re9MW0qfsGC9fzYXAydvINvtxI0+LybXxpeMLMHlzDEIK/yiW0Ui7Yr7qQ+lthUvCV4kbXMFExCnOhVjuCIDc79iajArN1n1X7/YyYba6TlqWQKCAOHCYEPzeWD9ZGSLL0yIhJYMlTisiv598YMVDCOM2a3PaI+deW3p1WFXrP7LY8j8MdsI0kJbNoHBfL8BFMWW/SlDeSuqrcWRJtNbVv2RJz6NdRtimCW7HXwMnKc=
