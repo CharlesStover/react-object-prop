@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './react-object-prop.js',
+  entry: './src/react-object-prop.js',
   mode: 'production',
   module: {
     rules: [
@@ -17,7 +17,7 @@ module.exports = {
     ]
   },
   output: {
-    filename: 'react-object-prop.min.js',
+    filename: 'react-object-prop.js',
     library: 'react-object-prop',
     libraryTarget: 'umd',
     path: path.resolve(__dirname, '.'),
