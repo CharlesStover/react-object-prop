@@ -1,33 +1,35 @@
 {
   "name": "react-object-prop",
-  "version": "1.0.3",
-  "description": "Caches Object props in React so as to prevent unnecessary re-rendering.",
-  "main": "react-object-prop.min.js",
-  "scripts": {
-    "build": "webpack",
-    "prepublish": "npm run build",
-    "test": "mocha react-object-prop.spec.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CharlesStover/react-object-prop.git"
-  },
-  "keywords": [
-    "react",
-    "reactjs"
-  ],
+  "version": "1.0.4",
   "author": "Charles Stover",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/CharlesStover/react-object-prop/issues"
   },
-  "homepage": "https://github.com/CharlesStover/react-object-prop#readme",
+  "description": "Caches Object props in React so as to prevent unnecessary re-rendering.",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.53",
     "@babel/preset-env": "^7.0.0-beta.53",
     "babel-loader": "^8.0.0-beta.4",
+    "jsdom": "^11.11.0",
+    "jsdom-global": "^3.0.2",
     "mocha": "^5.2.0",
     "webpack": "^4.16.0",
     "webpack-cli": "^3.0.8"
+  },
+  "homepage": "https://github.com/CharlesStover/react-object-prop#readme",
+  "keywords": [
+    "react",
+    "reactjs"
+  ],
+  "license": "MIT",
+  "main": "react-object-prop.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesStover/react-object-prop.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "prepublishOnly": "npm run build",
+    "test": "mocha -r jsdom-global/register tests/react-object-prop.spec.js"
   }
 }

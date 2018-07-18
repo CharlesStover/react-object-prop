@@ -1,4 +1,4 @@
-const createObjectProp = require('./react-object-prop');
+const createObjectProp = require('../react-object-prop');
 
 describe('react-object-prop', () => {
 
