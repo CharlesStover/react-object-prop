@@ -2,7 +2,7 @@
 Caches (memoizes) Object props in React so as to prevent unnecessary re-rendering.
 
 ![package](https://img.shields.io/github/package-json/v/CharlesStover/react-object-prop.svg)
-![build](https://travis-ci.com/CharlesStover/react-object-prop.svg?branch=master)
+![build](https://travis-ci.com/CharlesStover/react-object-prop.svg)
 ![downloads](https://img.shields.io/npm/dt/react-object-prop.svg)
 ![minified size](https://img.shields.io/bundlephobia/min/react-object-prop.svg)
 ![minzipped size](https://img.shields.io/bundlephobia/minzip/react-object-prop.svg)
