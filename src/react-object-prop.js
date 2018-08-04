@@ -1,19 +1,27 @@
 const createObjectProp = () => {
   let cache = Object.create(null);
-  return (obj) => {
-    let changed = false;
-    const temp = Object.create(null);
-    for (const [ key, value ] of Object.entries(obj)) {
-      if (
-        !Object.prototype.hasOwnProperty.call(cache, key) ||
-        cache[key] !== value
-      ) {
-        changed = true;
-      }
-      temp[key] = value;
+  let cacheLength = 0;
+  return obj => {
+    const objKeys = Object.keys(obj);
+    const objLength = objKeys.length;
+
+    // If the objects have a different number of keys, they are different.
+    // Update the cache.
+    if (objLength !== cacheLength) {
+      cache = {...obj};
+      cacheLength = objLength;
     }
-    if (changed) {
-      cache = temp;
+
+    // If the objects have the same number of keys, check each one individually.
+    else {
+      for (const key of objKeys) {
+
+        // If any of the properties differ, update the cache and stop checking.
+        if (cache[key] !== obj[key]) {
+          cache = {...obj};
+          break;
+        }
+      }
     }
     return cache;
   };
