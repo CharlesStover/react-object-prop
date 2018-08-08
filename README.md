@@ -1,11 +1,11 @@
 # react-object-prop
 Caches (memoizes) Object props in React so as to prevent unnecessary re-rendering.
 
-![package](https://img.shields.io/github/package-json/v/CharlesStover/react-object-prop.svg)
-![build](https://travis-ci.com/CharlesStover/react-object-prop.svg)
-![downloads](https://img.shields.io/npm/dt/react-object-prop.svg)
-![minified size](https://img.shields.io/bundlephobia/min/react-object-prop.svg)
-![minzipped size](https://img.shields.io/bundlephobia/minzip/react-object-prop.svg)
+[![package](https://img.shields.io/github/package-json/v/CharlesStover/react-object-prop.svg)](https://github.com/CharlesStover/react-object-prop)
+[![build](https://travis-ci.com/CharlesStover/react-object-prop.svg)](https://travis-ci.com/CharlesStover/react-object-prop)
+[![downloads](https://img.shields.io/npm/dt/react-object-prop.svg)](https://www.npmjs.com/package/react-object-prop)
+[![minified size](https://img.shields.io/bundlephobia/min/react-object-prop.svg)](https://www.npmjs.com/package/react-object-prop)
+[![minzipped size](https://img.shields.io/bundlephobia/minzip/react-object-prop.svg)](https://www.npmjs.com/package/react-object-prop)
 
 ## Install
 * `npm install react-object-prop --save` or
