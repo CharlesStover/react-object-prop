@@ -1,20 +1,24 @@
-# React Object Prop
+# React Object Prop [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Easily%20improve%20React%20performance%20by%20caching%20your%20object%20props%20with%20the%20react-object-prop%20package!&url=https://github.com/CharlesStover/react-object-prop&via=CharlesStover&hashtags=react,reactjs,javascript,webdev,webdeveloper,webdevelopment)
+
 Caches (memoizes) Object props in React so as to prevent unnecessary re-rendering.
 
-[![package](https://img.shields.io/github/package-json/v/CharlesStover/react-object-prop.svg)](https://github.com/CharlesStover/react-object-prop)
-[![build](https://travis-ci.com/CharlesStover/react-object-prop.svg)](https://travis-ci.com/CharlesStover/react-object-prop)
-[![downloads](https://img.shields.io/npm/dt/react-object-prop.svg)](https://www.npmjs.com/package/react-object-prop)
+[![version](https://img.shields.io/npm/v/react-object-prop.svg)](https://www.npmjs.com/package/react-object-prop)
 [![minified size](https://img.shields.io/bundlephobia/min/react-object-prop.svg)](https://www.npmjs.com/package/react-object-prop)
 [![minzipped size](https://img.shields.io/bundlephobia/minzip/react-object-prop.svg)](https://www.npmjs.com/package/react-object-prop)
+[![downloads](https://img.shields.io/npm/dt/react-object-prop.svg)](https://www.npmjs.com/package/react-object-prop)
+[![build](https://travis-ci.com/CharlesStover/react-object-prop.svg)](https://travis-ci.com/CharlesStover/react-object-prop)
 
 ## Install
+
 * `npm install react-object-prop --save` or
 * `yarn add react-object-prop`
 
 ## Test
+
 `npm test`
 
 ## Use
+
 Import the creator function from the package. Create a caching function _for each prop you want cached_.
 
 Pass the object you want cached to the caching function, instead of as a prop, then pass the result of the caching function as a prop.
@@ -22,9 +26,11 @@ Pass the object you want cached to the caching function, instead of as a prop, t
 If the object did not change since the last time it was passed to the caching function, a cache of the last object will be passed instead, preventing an unnecessary re-render.
 
 ## Example
+
 In this minimal example, the objects passed to the `value` exhibit varying stages of cache.
 
 Every time MyComponent renders:
+
 * The first Child component will re-render, because a new object reference will be generated for its `value` prop.
 * The second Child component will _not_ re-render, because the caching function will return its last used reference.
 * The third Child component will re-render, because the caching function will return a new reference due to the fact that the object has changed.
@@ -57,6 +63,7 @@ class MyComponent extends React.PureComponent {
 ```
 
 ## Real-World Example
+
 In this real-world example that inspired this package, the class names being passed to the Material UI components need to be cached. If the class names do not change, the Material UI components do not need to re-render.
 
 ```JS
