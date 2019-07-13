@@ -1,6 +1,6 @@
 {
   "name": "react-object-prop",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Charles Stover <react-object-prop@charlesstover.com>",
   "bugs": {
     "email": "react-object-prop@charlesstover.com",
@@ -28,11 +28,11 @@
     "prepublishOnly": "npm run build",
     "test": "mocha -r jsdom-global/register tests/react-object-prop.spec.js"
   },
-  "dependencies": { },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.53",
-    "@babel/preset-env": "^7.0.0-beta.53",
-    "babel-loader": "^8.0.0-beta.4",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-loader": "^8.0.6",
     "jsdom": "^11.11.0",
     "jsdom-global": "^3.0.2",
     "mocha": "^6.1.4",

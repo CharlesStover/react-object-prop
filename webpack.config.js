@@ -10,17 +10,18 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [ '@babel/preset-env' ]
-          }
-        }
-      }
-    ]
+            plugins: [ '@babel/plugin-proposal-object-rest-spread' ],
+            presets: [ '@babel/preset-env' ],
+          },
+        },
+      },
+    ],
   },
   output: {
     filename: 'react-object-prop.js',
     library: 'react-object-prop',
     libraryTarget: 'umd',
     path: path.resolve(__dirname, '.'),
-    umdNamedDefine: true
-  }
+    umdNamedDefine: true,
+  },
 };
