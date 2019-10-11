@@ -119,5 +119,5 @@ class Header extends React.PureComponent {
   }
 }
 
-export default withSTyles(headerStyles)(Header);
+export default withStyles(headerStyles)(Header);
 ```
